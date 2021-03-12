@@ -6,12 +6,14 @@ public class Gugudan2main {
 		Scanner sc = new Scanner(System.in);
 		String inputValue = sc.nextLine();
 		String[] splitedValue = inputValue.split(",");
+		
 		int first = Integer.parseInt(splitedValue[0]);
 		int second = Integer.parseInt(splitedValue[1]);
 
-		for(int i=2; i<first+1; i++) {
+		for(int i=2; i<=first; i++) {
 			for(int j=0; j<second; j++) {
-				System.out.println(i*(j+1));
+				int result= i*(j+1);
+				System.out.printf("%d*%d=%d%n",i,j+1,result);
 			}
 		}	
 	}
